@@ -1,6 +1,6 @@
-services:
-  notes-app:
-    build: .
-    image: kalusahu902/notes-app-jenkins:test
-    ports:
-      - "8000:8000"
+services: 
+ notes-app: 
+  build: . 
+  image: kalusahu902/notes-app-jenkins:${BUILD_NUMBER} 
+  ports:
+   - "8000:8000"
