@@ -1,4 +1,3 @@
-version : "3.3"
 services :
   web :
      image : kalusahu902/notes-app-jenkins:${BUILD_NUMBER}
