@@ -1,12 +1,10 @@
+
 pipeline {
     
-    agent { 
-        node{
-            label "dev"
-            
-        }
-    }
-    
+    pipeline {
+  agent { label 'jenkins-agent' }
+  ...
+}
     stages{
         stage("Clone Code"){
             steps{
